@@ -350,6 +350,7 @@ Int_t StUPCFilterMaker::Make()
       upcTrack->setCharge( track->charge() );
       upcTrack->setNhits( track->nHits() );
       upcTrack->setNhitsFit( track->nHitsFit() );
+      upcTrack->setNhitsMax( track->nHitsPoss() );
       upcTrack->setChi2( track->chi2() );
       upcTrack->setNhitsDEdx( track->nHitsDedx() );
       upcTrack->setDEdxSignal( track->dEdx() );
@@ -493,51 +494,3 @@ Int_t StUPCFilterMaker::Finish()
   return kStOk;
 
 }//Finish
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -21,7 +21,7 @@ ClassImp(StUPCTrack);
 StUPCTrack::StUPCTrack(): TObject(),
   mFlags(0), mPt(0), mEta(0), mPhi(0),
   mCurvature(0), mDipAngle(), mPhase(0),
-  mDcaXY(0), mDcaZ(0), mCharge(0), mNhits(0), mNhitsFit(0), mChi2(0),
+  mDcaXY(0), mDcaZ(0), mCharge(0), mNhits(0), mNhitsFit(0), mNhitsMax(0), mChi2(0),
   mNhitsDEdx(0), mDEdxSignal(0),
   mBemcPt(-999), mBemcEta(-999), mBemcPhi(-999), mBemcClsId(0), mBemcHitE(-999),
   mTofTime(0), mTofPathLength(0), mVtxId(0), mEvt(0x0)
@@ -138,35 +138,3 @@ StUPCVertex *StUPCTrack::getVertex() const
   return mEvt->getVertexId(mVtxId);
 
 }//getVertex
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -45,6 +45,7 @@ public:
 
   void setNhits(UShort_t nh) { mNhits = nh; }
   void setNhitsFit(UShort_t nf) { mNhitsFit = nf; }
+  void setNhitsMax(UShort_t nm) { mNhitsMax = nm; }
 
   void setChi2(Double_t chi2) { mChi2 = chi2; }
 
@@ -85,6 +86,7 @@ public:
 
   UShort_t getNhits() const { return mNhits; }
   UShort_t getNhitsFit() const { return mNhitsFit; }
+  UShort_t getNhitsMax() const { return mNhitsMax; }
 
   Double_t getChi2() const { return mChi2; }
 
@@ -137,6 +139,7 @@ private:
 
   UShort_t mNhits; // total number of hits on track
   UShort_t mNhitsFit; // number of hits used in fit
+  UShort_t mNhitsMax; // maximum of hits on track
 
   Double32_t mChi2; // chi2 of fit
 
@@ -163,21 +166,3 @@ private:
 };
 
 #endif
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
