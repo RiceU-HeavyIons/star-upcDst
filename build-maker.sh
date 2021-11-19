@@ -1,6 +1,6 @@
 #!/bin/bash
 
-STARLIB=SL21b
+STARLIB=SL21d
 SRC="src"
 INC="include"
 DEST="StRoot/StUPCFilterMaker"
